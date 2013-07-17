@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Consult</title>
+        <link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <a href="index.html" data-icon="delete" id="cancel">Cancel</a>
+                <h1>Report</h1>
+                <a href="#" data-icon="check" id="submit">Submit</a>
+            </div>
+            <div data-role="content">
+				<!--            
+            	<div id="photo_preview">
+                	<div style="border: 1px solid #b8b8b8; height:200px; width:200px; margin:0 auto">
+                		<img src="" height="200" width="200"/>
+                    </div>
+                </div>
+                -->
+                
+                <div id="photo_start">
+                    <div style="width: 100%; height: 200px; max-height: 100%; min-height: 100%; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                        <img src="images/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" />
+                        
+                    </div>
+                </div>
+                
+                <a data-role="button" data-theme="e" href="#page1" data-icon="plus" data-iconpos="left">
+                    Capture Photo
+                </a>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtFarmerName">
+                            Farmer Name
+                        </label>
+                        <input name="FarmerName" id="txtFarmerName" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtMobile">
+                            Mobile Number
+                        </label>
+                        <input name="Mobile" id="txtMobile" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtAddress">
+                            Address
+                        </label>
+                        <input name="Address" id="txtAddress" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtVariety">
+                            Rice Variety
+                        </label>
+                        <input name="Variety" id="txtVariety" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtStage">
+                            Growth Stage
+                        </label>
+                        <input name="Stage" id="txtStage" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="optWind">
+                        Discolored Part
+                    </label>
+                    <select id="optPart" name="Part" data-theme="c">
+                        <option value="Leaf">
+                            Leaf
+                        </option>
+                        <option value="Sheath">
+                            Sheath
+                        </option>
+                        <option value="Stem">
+                            Stem
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtColor">
+                            Color
+                        </label>
+                        <input name="Color" id="txtColor" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>Holes in Leaves?</legend>
+                        <input type="radio" name="radio-choice-holes" id="radio-choice-1" value="Yes" checked="checked" />
+                        <label for="radio-choice-1" >Yes</label>
+                
+                        <input type="radio" name="radio-choice-holes" id="radio-choice-2" value="No"  />
+                        <label for="radio-choice-2">No</label>
+                </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>Broken Stem?</legend>
+                        <input type="radio" name="radio-choice-broken" id="radio-choice-3" value="Yes" checked="checked" />
+                        <label for="radio-choice-3" >Yes</label>
+                
+                        <input type="radio" name="radio-choice-broken" id="radio-choice-4" value="No"  />
+                        <label for="radio-choice-4">No</label>
+                </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>Dead Pillars?</legend>
+                        <input type="radio" name="radio-choice-dead" id="radio-choice-5" value="Yes" checked="checked" />
+                        <label for="radio-choice-5" >Yes</label>
+                
+                        <input type="radio" name="radio-choice-dead" id="radio-choice-6" value="No"  />
+                        <label for="radio-choice-6">No</label>
+                </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>Spotty Field?</legend>
+                        <input type="radio" name="radio-choice-spotty" id="radio-choice-7" value="Yes" checked="checked" />
+                        <label for="radio-choice-7" >Yes</label>
+                
+                        <input type="radio" name="radio-choice-spotty" id="radio-choice-8" value="No"  />
+                        <label for="radio-choice-8">No</label>
+                </fieldset>
+                </div>    
+               
+            </div>
+            <div id="hdrFooter" data-theme="a" data-role="footer" data-position="fixed">
+                <h5>
+                    &copy; 2012. Rice++
+                </h5>
+            </div>
+        </div>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" charset="utf-8">
+		// Wait for PhoneGap to load
+        document.addEventListener("deviceready", onDeviceReady, false);
+        // PhoneGap is ready
+        function onDeviceReady() {
+  			// Do cool things here...
+			
+        }
+		</script>
+    </body>
+</html>
